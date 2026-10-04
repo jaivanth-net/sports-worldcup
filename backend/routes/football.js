@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const FootballMatch = require('../models/FootballMatch');
 const fallbackFootballData = require('../data/footballData');
+const { isDbConnected } = require('../config/db');
 
 // GET overall football stats & leaderboards
 router.get('/stats', async (req, res) => {
@@ -32,38 +33,39 @@ router.get('/stats', async (req, res) => {
 
 // GET all football matches (summary)
 router.get('/', async (req, res) => {
-  try {
-    const matches = await FootballMatch.find()
-      .select('year winner runnerUp venue city country score penalties penaltyScore attendance manOfTheMatch goldenBoot goldenBall goldenGlove')
-      .sort({ year: 1 });
-    
-    if (matches && matches.length > 0) {
-      return res.json(matches);
+  if (isDbConnected()) {
+    try {
+      const matches = await FootballMatch.find()
+        .select('year winner runnerUp venue city country score penalties penaltyScore attendance manOfTheMatch goldenBoot goldenBall goldenGlove')
+        .sort({ year: 1 });
+      
+      if (matches && matches.length > 0) {
+        return res.json(matches);
+      }
+    } catch (err) {
+      // Fallback below
     }
-    res.json(fallbackFootballData);
-  } catch (err) {
-    res.json(fallbackFootballData);
   }
+  res.json(fallbackFootballData);
 });
 
 // GET single match detail by year
 router.get('/:year', async (req, res) => {
-  try {
-    const yearNum = parseInt(req.params.year);
-    const match = await FootballMatch.findOne({ year: yearNum });
-    if (match) return res.json(match);
-    
-    const fallbackMatch = fallbackFootballData.find(m => m.year === yearNum);
-    if (!fallbackMatch) return res.status(404).json({ message: 'Match not found' });
-    res.json(fallbackMatch);
-  } catch (err) {
-    const yearNum = parseInt(req.params.year);
-    const fallbackMatch = fallbackFootballData.find(m => m.year === yearNum);
-    if (!fallbackMatch) return res.status(404).json({ message: 'Match not found' });
-    res.json(fallbackMatch);
+  const yearNum = parseInt(req.params.year);
+  if (isDbConnected()) {
+    try {
+      const match = await FootballMatch.findOne({ year: yearNum });
+      if (match) return res.json(match);
+    } catch (err) {
+      // Fallback below
+    }
   }
+  const fallbackMatch = fallbackFootballData.find(m => m.year === yearNum);
+  if (!fallbackMatch) return res.status(404).json({ message: 'Match not found' });
+  res.json(fallbackMatch);
 });
 
 module.exports = router;
+
 
 
