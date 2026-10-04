@@ -1485,10 +1485,9 @@
   </div>
 
   <script>
-    // Automatic API Base detection so index.html works both via http://localhost:5000 AND direct file viewing (file://...)
-    const API_BASE = (window.location.protocol === 'file:' || !window.location.port)
-      ? 'http://localhost:5000'
-      : '';
+    // Automatic API Base detection so index.html works both via http/https AND direct file viewing (file://...)
+    const API_BASE = window.location.protocol === 'file:' ? 'http://localhost:5000' : '';
+
 
     let currentSport = 'cricket';
     let currentFormat = 'ALL';
