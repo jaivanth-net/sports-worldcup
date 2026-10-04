@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 260" width="160" height="260">
+  <defs>
+    <linearGradient id="silverUrn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="35%" stop-color="#ECEFF1"/>
+      <stop offset="70%" stop-color="#B0BEC5"/>
+      <stop offset="100%" stop-color="#607D8B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Pedestal -->
+  <rect x="40" y="220" width="80" height="20" rx="3" fill="#37474F"/>
+  <rect x="48" y="205" width="64" height="15" fill="url(#silverUrn)"/>
+
+  <!-- Urn Body -->
+  <path d="M52,205 C40,160 35,110 80,85 C125,110 120,160 108,205 Z" fill="url(#silverUrn)"/>
+  <!-- Neck & Lid -->
+  <rect x="58" y="65" width="44" height="20" rx="2" fill="url(#silverUrn)"/>
+  <path d="M60,65 C60,40 100,40 100,65 Z" fill="url(#silverUrn)"/>
+  <circle cx="80" cy="35" r="7" fill="url(#silverUrn)"/>
+
+  <!-- Decorative Silver Handles -->
+  <path d="M48,100 C20,90 20,160 52,175" fill="none" stroke="url(#silverUrn)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M112,100 C140,90 140,160 108,175" fill="none" stroke="url(#silverUrn)" stroke-width="9" stroke-linecap="round"/>
+</svg>

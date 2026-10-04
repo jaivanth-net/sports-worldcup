@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" width="200" height="120">
+  <defs>
+    <linearGradient id="iccGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff"/>
+      <stop offset="100%" stop-color="#0066ff"/>
+    </linearGradient>
+  </defs>
+  <!-- Radiant ICC Rays & Sphere -->
+  <g transform="translate(100, 42)">
+    <circle cx="0" cy="0" r="18" fill="url(#iccGrad)" opacity="0.9"/>
+    <path d="M -26 -10 L -14 -4 M -28 4 L -16 2 M -24 16 L -12 10 M 0 -28 L 0 -16 M 16 -24 L 10 -12 M 26 -10 L 14 -4 M 28 4 L 16 2 M 24 16 L 12 10" stroke="#00d2ff" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="8" fill="#ffffff"/>
+  </g>
+  <!-- ICC Text -->
+  <text x="100" y="98" font-family="'Outfit', 'Arial Black', sans-serif" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="4" text-anchor="middle">ICC</text>
+</svg>

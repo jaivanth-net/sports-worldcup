@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 260" width="160" height="260">
+  <defs>
+    <linearGradient id="goldGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE57F"/>
+      <stop offset="35%" stop-color="#FFC107"/>
+      <stop offset="70%" stop-color="#FF8F00"/>
+      <stop offset="100%" stop-color="#FF6F00"/>
+    </linearGradient>
+    <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E1"/>
+      <stop offset="50%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#B78103"/>
+    </linearGradient>
+    <linearGradient id="malachite" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#004D40"/>
+      <stop offset="25%" stop-color="#00796B"/>
+      <stop offset="50%" stop-color="#004D40"/>
+      <stop offset="75%" stop-color="#00897B"/>
+      <stop offset="100%" stop-color="#00332C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Malachite Base -->
+  <rect x="35" y="225" width="90" height="14" rx="3" fill="url(#malachite)"/>
+  <rect x="40" y="210" width="80" height="14" rx="2" fill="url(#malachite)"/>
+  
+  <!-- Base Gold Rings -->
+  <rect x="44" y="204" width="72" height="6" fill="url(#goldGrad1)"/>
+  <rect x="38" y="222" width="84" height="3" fill="url(#goldGrad1)"/>
+
+  <!-- Stem & Spiraling Figures -->
+  <path d="M55,204 C55,160 40,130 52,95 C57,80 62,60 80,60 C98,60 103,80 108,95 C120,130 105,160 105,204 Z" fill="url(#goldGrad1)"/>
+
+  <!-- Swirling Arms details -->
+  <path d="M52,190 Q65,150 50,110 C45,95 55,80 70,75 C60,95 72,130 60,190 Z" fill="url(#goldGrad2)" opacity="0.8"/>
+  <path d="M108,190 Q95,150 110,110 C115,95 105,80 90,75 C100,95 88,130 100,190 Z" fill="url(#goldGrad2)" opacity="0.8"/>
+
+  <!-- Top World Globe -->
+  <circle cx="80" cy="45" r="32" fill="url(#goldGrad1)"/>
+  <!-- Continents detailing on globe -->
+  <path d="M60,35 Q70,25 85,30 Q95,40 100,32 Q105,48 95,58 Q80,65 65,55 Z" fill="#FFC107" opacity="0.6"/>
+  <path d="M55,45 Q65,40 72,50 Q65,60 55,45 Z" fill="#FFE082" opacity="0.7"/>
+
+  <!-- Shiny highlight -->
+  <ellipse cx="68" cy="28" rx="8" ry="4" fill="#FFFFFF" opacity="0.6" transform="rotate(-30 68 28)"/>
+</svg>

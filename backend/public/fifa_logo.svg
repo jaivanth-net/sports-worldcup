@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" width="200" height="120">
+  <defs>
+    <linearGradient id="fifaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <!-- Official FIFA Typography style -->
+  <g fill="url(#fifaGrad)">
+    <!-- F -->
+    <path d="M 25 30 L 65 30 L 65 44 L 41 44 L 41 58 L 60 58 L 60 72 L 41 72 L 41 90 L 25 90 Z"/>
+    <!-- I -->
+    <path d="M 73 30 L 89 30 L 89 90 L 73 90 Z"/>
+    <!-- F -->
+    <path d="M 97 30 L 137 30 L 137 44 L 113 44 L 113 58 L 132 58 L 132 72 L 113 72 L 113 90 L 97 90 Z"/>
+    <!-- A -->
+    <path d="M 145 90 L 163 30 L 181 30 L 199 90 L 182 90 L 177 74 L 167 74 L 162 90 Z M 172 58 L 172 58 L 169 48 L 167 58 Z"/>
+  </g>
+  <!-- FIFA Gold accent line below -->
+  <rect x="25" y="98" width="174" height="4" rx="2" fill="#fbbf24" opacity="0.9"/>
+</svg>

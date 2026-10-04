@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="200" height="300">
+  <defs>
+    <linearGradient id="t20GoldMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF59D"/>
+      <stop offset="35%" stop-color="#FFC107"/>
+      <stop offset="70%" stop-color="#FF8F00"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+    <linearGradient id="t20SilverMain" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ECEFF1"/>
+      <stop offset="40%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#CFD8DC"/>
+      <stop offset="100%" stop-color="#78909C"/>
+    </linearGradient>
+    <filter id="shadowT20" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadowT20)">
+    <!-- Base -->
+    <rect x="50" y="245" width="100" height="30" rx="6" fill="#1E293B"/>
+    <rect x="60" y="230" width="80" height="15" fill="url(#t20SilverMain)"/>
+
+    <!-- Angular V-Shaped Silver Handles -->
+    <polygon points="55,230 78,80 122,80 145,230" fill="url(#t20SilverMain)"/>
+    
+    <!-- Cutout V-Channel -->
+    <polygon points="85,230 92,110 108,110 115,230" fill="#0F172A"/>
+
+    <!-- Sweeping Golden Ribbon Arc -->
+    <path d="M42,125 Q100,45 158,125 Q100,95 42,125 Z" fill="url(#t20GoldMain)"/>
+
+    <!-- Top Emblem Circle with T20 Engraving -->
+    <circle cx="100" cy="65" r="22" fill="url(#t20GoldMain)"/>
+    <circle cx="100" cy="65" r="17" fill="#0F172A"/>
+    <text x="100" y="71" font-size="14" font-weight="900" font-family="'Outfit', sans-serif" fill="url(#t20GoldMain)" text-anchor="middle">T20</text>
+  </g>
+</svg>

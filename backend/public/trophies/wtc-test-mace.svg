@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="200" height="300">
+  <defs>
+    <linearGradient id="maceGoldMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="40%" stop-color="#FFB300"/>
+      <stop offset="70%" stop-color="#FF8F00"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+    <linearGradient id="maceSilverMain" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CFD8DC"/>
+      <stop offset="40%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#90A4AE"/>
+      <stop offset="100%" stop-color="#546E7A"/>
+    </linearGradient>
+    <radialGradient id="maceSphereShine" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFDE7"/>
+      <stop offset="40%" stop-color="#FFC107"/>
+      <stop offset="80%" stop-color="#FF8F00"/>
+    </radialGradient>
+    <filter id="shadowMace" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadowMace)">
+    <!-- Mace Long Staff Shaft -->
+    <rect x="92" y="90" width="16" height="190" rx="4" fill="url(#maceSilverMain)"/>
+    <rect x="88" y="250" width="24" height="25" rx="3" fill="url(#maceGoldMain)"/>
+    <rect x="90" y="190" width="20" height="12" rx="2" fill="url(#maceGoldMain)"/>
+    <rect x="90" y="130" width="20" height="12" rx="2" fill="url(#maceGoldMain)"/>
+
+    <!-- Mace Crown Base Support Ring -->
+    <ellipse cx="100" cy="90" rx="30" ry="10" fill="url(#maceGoldMain)"/>
+
+    <!-- Mace Laurel Globe Crown -->
+    <circle cx="100" cy="55" r="38" fill="url(#maceSphereShine)"/>
+    
+    <!-- Outer Globe Laurel Wreath Rings -->
+    <circle cx="100" cy="55" r="30" fill="none" stroke="#FFFFFF" stroke-width="3.5" opacity="0.9"/>
+    <circle cx="100" cy="55" r="22" fill="none" stroke="url(#maceGoldMain)" stroke-width="3"/>
+
+    <!-- Top Crown Finial -->
+    <circle cx="100" cy="14" r="10" fill="url(#maceGoldMain)"/>
+    <polygon points="100,2 104,10 96,10" fill="#FFFDE7"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 260" width="160" height="260">
+  <defs>
+    <linearGradient id="maceGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="50%" stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#FF6F00"/>
+    </linearGradient>
+    <linearGradient id="maceSilver" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CFD8DC"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#78909C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Mace Long Staff Shaft -->
+  <rect x="74" y="80" width="12" height="160" rx="3" fill="url(#maceSilver)"/>
+  <rect x="72" y="210" width="16" height="20" rx="2" fill="url(#maceGold)"/>
+
+  <!-- Mace Crown Top Sphere -->
+  <circle cx="80" cy="55" r="32" fill="url(#maceGold)"/>
+  <!-- Laurel / Ribbon Crown Rings -->
+  <circle cx="80" cy="55" r="26" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <circle cx="80" cy="20" r="8" fill="url(#maceGold)"/>
+</svg>

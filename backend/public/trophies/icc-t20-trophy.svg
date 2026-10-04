@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 260" width="160" height="260">
+  <defs>
+    <linearGradient id="t20Gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF176"/>
+      <stop offset="50%" stop-color="#FBC02D"/>
+      <stop offset="100%" stop-color="#F57F17"/>
+    </linearGradient>
+    <linearGradient id="t20Silver" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ECEFF1"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#90A4AE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Heavy Base -->
+  <rect x="40" y="215" width="80" height="25" rx="5" fill="#263238"/>
+  <rect x="48" y="200" width="64" height="15" fill="url(#t20Silver)"/>
+
+  <!-- Angular T20 Columns forming a V / Cup -->
+  <polygon points="45,200 65,70 95,70 115,200" fill="url(#t20Silver)"/>
+  
+  <!-- Cutout T20 Slot -->
+  <polygon points="70,200 75,100 85,100 90,200" fill="#263238"/>
+
+  <!-- Dynamic Gold Sweeping Ribbon / Crest -->
+  <path d="M35,110 Q80,40 125,110 Q80,80 35,110 Z" fill="url(#t20Gold)"/>
+
+  <!-- T20 Embossed Emblem at top -->
+  <circle cx="80" cy="55" r="16" fill="url(#t20Gold)"/>
+  <text x="80" y="60" font-size="12" font-weight="bold" font-family="sans-serif" fill="#263238" text-anchor="middle">T20</text>
+</svg>

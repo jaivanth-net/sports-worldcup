@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="200" height="300">
+  <defs>
+    <linearGradient id="cwcGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF59D"/>
+      <stop offset="35%" stop-color="#FFC107"/>
+      <stop offset="75%" stop-color="#FF8F00"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+    <linearGradient id="cwcSilver" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#90A4AE"/>
+      <stop offset="30%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#CFD8DC"/>
+      <stop offset="100%" stop-color="#546E7A"/>
+    </linearGradient>
+    <radialGradient id="ballGlow" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFDE7"/>
+      <stop offset="50%" stop-color="#FFC107"/>
+      <stop offset="100%" stop-color="#FF6F00"/>
+    </radialGradient>
+    <filter id="shadowCwc" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadowCwc)">
+    <!-- Base Plaque Ring -->
+    <ellipse cx="100" cy="272" rx="68" ry="15" fill="url(#cwcSilver)"/>
+    <rect x="42" y="248" width="116" height="24" rx="5" fill="url(#cwcSilver)"/>
+    <rect x="48" y="240" width="104" height="8" rx="2" fill="url(#cwcGold)"/>
+
+    <!-- 3 Sweeping Columns -->
+    <!-- Left Column -->
+    <path d="M55,240 Q48,160 76,82 Q84,82 72,240 Z" fill="url(#cwcSilver)"/>
+    <!-- Center Column -->
+    <path d="M92,240 Q100,150 100,75 Q108,150 108,240 Z" fill="url(#cwcSilver)"/>
+    <!-- Right Column -->
+    <path d="M145,240 Q152,160 124,82 Q116,82 128,240 Z" fill="url(#cwcSilver)"/>
+
+    <!-- Gold Seam Ring around middle -->
+    <ellipse cx="100" cy="160" rx="46" ry="10" fill="none" stroke="url(#cwcGold)" stroke-width="4"/>
+
+    <!-- Top Golden Cricket Globe -->
+    <circle cx="100" cy="55" r="40" fill="url(#ballGlow)"/>
+
+    <!-- Cricket Ball Seams on Golden Globe -->
+    <path d="M66,42 C82,32 118,32 134,42" fill="none" stroke="#FFF59D" stroke-width="3" stroke-dasharray="4,2"/>
+    <path d="M66,68 C82,78 118,78 134,68" fill="none" stroke="#FFF59D" stroke-width="3" stroke-dasharray="4,2"/>
+
+    <!-- Globe Shiny Highlight -->
+    <ellipse cx="85" cy="35" rx="10" ry="5" fill="#FFFFFF" opacity="0.7" transform="rotate(-25 85 35)"/>
+  </g>
+</svg>

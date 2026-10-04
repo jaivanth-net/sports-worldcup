@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <!-- Maroon Flag Base -->
+  <rect width="300" height="200" fill="#7A0026"/>
+  
+  <!-- Subtle inner gold accent border -->
+  <rect x="4" y="4" width="292" height="192" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.35"/>
+
+  <!-- Center Emblem Group -->
+  <g transform="translate(150, 100)">
+    <!-- Golden Sun Backdrop -->
+    <circle cx="0" cy="-10" r="38" fill="#FFD700"/>
+    <circle cx="0" cy="-10" r="32" fill="#FFA000"/>
+    
+    <!-- Island Mound -->
+    <ellipse cx="0" cy="22" rx="42" ry="14" fill="#2E7D32"/>
+    
+    <!-- Palm Tree Trunk -->
+    <path d="M-4,22 Q-6,-2 -15,-26 Q-12,-26 -1,-22 Q3,-2 -1,22 Z" fill="#5D4037"/>
+    
+    <!-- Palm Leaves -->
+    <path d="M-13,-24 Q-35,-35 -48,-20 Q-30,-15 -13,-24 Z" fill="#1B5E20"/>
+    <path d="M-13,-24 Q-30,-45 -20,-52 Q-10,-35 -13,-24 Z" fill="#2E7D32"/>
+    <path d="M-13,-24 Q0,-55 10,-52 Q5,-35 -13,-24 Z" fill="#43A047"/>
+    <path d="M-13,-24 Q25,-40 32,-25 Q15,-18 -13,-24 Z" fill="#1B5E20"/>
+    <path d="M-13,-24 Q-25,-10 -35,-2 Q-20,-8 -13,-24 Z" fill="#2E7D32"/>
+    
+    <!-- Cricket Stumps & Bails -->
+    <!-- Stump 1 -->
+    <rect x="-14" y="2" width="3.5" height="24" rx="1" fill="#FFFFFF"/>
+    <!-- Stump 2 -->
+    <rect x="-6" y="2" width="3.5" height="24" rx="1" fill="#FFFFFF"/>
+    <!-- Stump 3 -->
+    <rect x="2" y="2" width="3.5" height="24" rx="1" fill="#FFFFFF"/>
+    <!-- Bails -->
+    <rect x="-16" y="0" width="23" height="2.5" rx="0.5" fill="#FFFFFF"/>
+    
+    <!-- Gold Shield Outer Ring -->
+    <circle cx="0" cy="2" r="46" fill="none" stroke="#FFD700" stroke-width="4"/>
+  </g>
+</svg>

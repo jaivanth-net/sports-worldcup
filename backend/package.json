@@ -1,0 +1,17 @@
+{
+  "name": "sports-worldcup-backend",
+  "version": "1.0.0",
+  "description": "MERN Stack Sports World Cup API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node data/seed.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0"
+  }
+}

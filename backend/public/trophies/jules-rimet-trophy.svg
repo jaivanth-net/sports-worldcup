@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 260" width="160" height="260">
+  <defs>
+    <linearGradient id="goldJules" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF176"/>
+      <stop offset="40%" stop-color="#FBC02D"/>
+      <stop offset="80%" stop-color="#F57F17"/>
+    </linearGradient>
+    <linearGradient id="lapis" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D47A1"/>
+      <stop offset="50%" stop-color="#1976D2"/>
+      <stop offset="100%" stop-color="#0A2472"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Blue Lapis Lazuli Base -->
+  <polygon points="45,245 115,245 125,200 35,200" fill="url(#lapis)"/>
+  <rect x="40" y="190" width="80" height="10" fill="url(#goldJules)"/>
+  
+  <!-- Goddess Nike Body -->
+  <path d="M70,190 L90,190 L88,140 C98,125 105,100 95,75 L80,90 L65,75 C55,100 62,125 72,140 Z" fill="url(#goldJules)"/>
+  <!-- Wings -->
+  <path d="M65,130 C45,110 35,80 40,60 C55,75 62,95 72,110 Z" fill="url(#goldJules)"/>
+  <path d="M95,130 C115,110 125,80 120,60 C105,75 98,95 88,110 Z" fill="url(#goldJules)"/>
+
+  <!-- Octagonal Vessel Cup -->
+  <polygon points="50,60 110,60 120,20 40,20" fill="url(#goldJules)"/>
+  <rect x="45" y="15" width="70" height="5" fill="#FFF176"/>
+</svg>
